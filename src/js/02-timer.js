@@ -40,6 +40,7 @@ const fp = flatpickr(inputEl, options);
 function countdown() {
   const selectedDate = fp.selectedDates[0];
   inputEl.disabled = true;
+   btnEl.disabled = true;
   timerId = setInterval(() => {
     const startTime = new Date();
     const count = selectedDate - startTime;
